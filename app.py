@@ -1,4 +1,9 @@
+import os
+if not os.path.exists('food.db'):
+    
+    import database_setup
 import streamlit as st
+
 import sqlite3
 import pandas as pd
 from queries import (
